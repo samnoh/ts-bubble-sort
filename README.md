@@ -29,4 +29,15 @@ npm install --save-dev concurrently
 }
 ```
 
-### Type Guard
+### Abstract Classes
+
+-   Strongly couples classes together
+
+```TypeScript
+abstract class Vehicle {
+    abstract goTo(road: string): void
+    abstract setOwner(name: string): void
+
+    startEngine(): void {...}
+}
+```
