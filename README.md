@@ -7,7 +7,7 @@
 -   create `tsconfig.json` automatically
 
 ```bash
-tsc --init
+tsc --init --rootDir "./src" --outDir "./build"
 ```
 
 ### concurrently
