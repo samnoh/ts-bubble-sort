@@ -26,19 +26,19 @@ export class LinkedList extends Sorter {
     }
 
     add(data: number): void {
-        const node = new Node(data);
+        const newNode = new Node(data);
 
         if (!this.head) {
-            this.head = node;
+            this.head = newNode;
             return;
         }
 
-        let tail = this.head;
-        while (tail.next) {
-            tail = tail.next;
+        let node = this.head;
+        while (node.next) {
+            node = node.next;
         }
 
-        tail.next = node;
+        node.next = newNode;
     }
 
     at(index: number): Node {
@@ -74,7 +74,6 @@ export class LinkedList extends Sorter {
 
         const leftNode = this.at(leftIndex);
         const rightNode = this.at(rightIndex);
-
         [leftNode.data, rightNode.data] = [rightNode.data, leftNode.data];
     }
 
