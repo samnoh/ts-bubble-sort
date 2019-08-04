@@ -25,12 +25,12 @@ export class LinkedList extends Sorter {
         return length;
     }
 
-    add(data: number): void {
+    add(data: number): this {
         const newNode = new Node(data);
 
         if (!this.head) {
             this.head = newNode;
-            return;
+            return this;
         }
 
         let node = this.head;
@@ -39,6 +39,8 @@ export class LinkedList extends Sorter {
         }
 
         node.next = newNode;
+
+        return this;
     }
 
     at(index: number): Node {

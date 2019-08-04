@@ -1,5 +1,5 @@
-import { NumbersCollection } from './NumbersCollection';
 import { CharactersCollection } from './CharactersCollection';
+import { NumbersCollection } from './NumbersCollection';
 import { LinkedList } from './LinkedList';
 
-export { NumbersCollection, CharactersCollection, LinkedList };
+export { CharactersCollection, NumbersCollection, LinkedList };

@@ -3,7 +3,7 @@ export abstract class Sorter {
     abstract compare(leftIndex: number, rightIndex: number): boolean;
     abstract swap(leftIndex: number, rightIndex: number): void;
 
-    sort(): void {
+    sort(): this {
         const { length } = this;
 
         // Bubble Sort
@@ -14,5 +14,7 @@ export abstract class Sorter {
                 }
             }
         }
+
+        return this;
     }
 }
