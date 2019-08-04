@@ -13,6 +13,7 @@ tsc --init
 ### concurrently
 
 -   Run multiple commands concurrently
+-   [npm](https://www.npmjs.com/package/concurrently)
 
 ```bash
 npm install --save-dev concurrently
