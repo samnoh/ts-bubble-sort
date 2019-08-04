@@ -1,0 +1,32 @@
+{
+    "name": "ts-design-patterns",
+    "version": "1.0.0",
+    "description": "TypeScript Design Patterns",
+    "private": true,
+    "main": "index.js",
+    "scripts": {
+        "start": "concurrently npm:start:*",
+        "start:run": "nodemon build/index.js",
+        "start:tsc": "tsc -w",
+        "build": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/samnoh/ts-design-patterns.git"
+    },
+    "keywords": [
+        "TypeScript",
+        "Design Patterns"
+    ],
+    "author": "samnoh",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/samnoh/ts-design-patterns/issues"
+    },
+    "homepage": "https://github.com/samnoh/ts-design-patterns#readme",
+    "devDependencies": {
+        "concurrently": "^4.1.1",
+        "nodemon": "^1.19.1",
+        "typescript": "^3.5.3"
+    }
+}
