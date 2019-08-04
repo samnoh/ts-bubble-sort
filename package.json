@@ -1,7 +1,7 @@
 {
-    "name": "ts-design-patterns",
+    "name": "ts-bubble-sort",
     "version": "1.0.0",
-    "description": "TypeScript Design Patterns",
+    "description": "TypeScript Bubble Sort",
     "private": true,
     "main": "index.js",
     "scripts": {
@@ -16,7 +16,8 @@
     },
     "keywords": [
         "TypeScript",
-        "Design Patterns"
+        "Design Patterns",
+        "Bubble Sort"
     ],
     "author": "samnoh",
     "license": "MIT",
