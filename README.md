@@ -51,3 +51,19 @@ class Car extends Vehicle {
     }
 }
 ```
+
+### Method Chaining
+
+```TypeScript
+class Calculatr {
+    constructor(public value: number) {}
+
+    add(num: number): this {
+        this.number += num;
+        return this;
+    }
+}
+
+const calc = new Calculator(1);
+calc.add(1).add(10).add(4);
+```
