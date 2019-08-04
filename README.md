@@ -42,3 +42,12 @@ abstract class Vehicle {
     startEngine(): void {...}
 }
 ```
+
+```TypeScript
+class Car extends Vehicle {
+    constructor() {
+        super();
+        ...
+    }
+}
+```
