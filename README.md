@@ -32,6 +32,7 @@ npm install --save-dev concurrently
 ### Abstract Classes
 
 -   Strongly couples classes together
+-   Informs child classes what methods they should have
 
 ```TypeScript
 abstract class Vehicle {
