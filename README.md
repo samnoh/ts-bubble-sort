@@ -28,3 +28,5 @@ npm install --save-dev concurrently
     "start": "concurrently npm:start:*"
 }
 ```
+
+### Type Guard
