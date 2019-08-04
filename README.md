@@ -1,4 +1,4 @@
-# TypeScript Design Patterns
+# TypeScript Bubble Sort
 
 ## TIL
 
