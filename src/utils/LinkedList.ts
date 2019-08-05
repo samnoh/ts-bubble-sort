@@ -9,6 +9,12 @@ class Node {
 export class LinkedList extends Sorter {
     head: Node | null = null;
 
+    static sortAndPrint(data: number[]) {
+        const linkedList = new LinkedList();
+        data.map(num => linkedList.add(num));
+        return linkedList.sort().print();
+    }
+
     get length(): number {
         if (!this.head) {
             return 0;

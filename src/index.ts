@@ -1,15 +1,6 @@
-import { NumbersCollection, CharactersCollection, LinkedList } from './utils';
+import { CharactersCollection, DatesCollection, NumbersCollection, LinkedList } from './utils';
 
-const charactersCollection = new CharactersCollection('zookeeper');
-const numbersCollection = new NumbersCollection([9, 3, 6, 10, 7, 1]);
-const linkedList = new LinkedList()
-    .add(9)
-    .add(3)
-    .add(6)
-    .add(10)
-    .add(7)
-    .add(1);
-
-charactersCollection.sort().print();
-numbersCollection.sort().print();
-linkedList.sort().print();
+CharactersCollection.sortAndPrint('zookeeper');
+DatesCollection.sortAndPrint([new Date(2020, 0, 15), new Date(2000, 10, 10), new Date(2010, 0, 1)]);
+NumbersCollection.sortAndPrint([9, 3, 6, 10, 7, 1]);
+LinkedList.sortAndPrint([9, 3, 6, 10, 7, 1]);

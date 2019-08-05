@@ -1,11 +1,11 @@
 import { Sorter } from './Sorter';
 
-export class NumbersCollection extends Sorter {
-    static sortAndPrint(data: number[]) {
-        return new NumbersCollection(data).sort().print();
+export class DatesCollection extends Sorter {
+    static sortAndPrint(data: Date[]) {
+        return new DatesCollection(data).sort().print();
     }
 
-    constructor(public data: number[]) {
+    constructor(public data: Date[]) {
         super();
     }
 
@@ -14,14 +14,14 @@ export class NumbersCollection extends Sorter {
     }
 
     compare(leftIndex: number, rightIndex: number): boolean {
-        return this.data[leftIndex] > this.data[rightIndex];
+        return this.data[leftIndex].getTime() > this.data[rightIndex].getTime();
     }
 
     swap(leftIndex: number, rightIndex: number): void {
         [this.data[leftIndex], this.data[rightIndex]] = [
             this.data[rightIndex],
             this.data[leftIndex]
-        ]; // swap in destructuring expression
+        ]; // swap
     }
 
     print(): void {

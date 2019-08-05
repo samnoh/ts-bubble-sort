@@ -1,6 +1,10 @@
 import { Sorter } from './Sorter';
 
 export class CharactersCollection extends Sorter {
+    static sortAndPrint(data: string) {
+        return new CharactersCollection(data).sort().print();
+    }
+
     constructor(public data: string) {
         super();
     }
