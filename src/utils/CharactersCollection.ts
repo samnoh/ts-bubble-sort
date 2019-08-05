@@ -1,7 +1,7 @@
 import { Sorter } from './Sorter';
 
 export class CharactersCollection extends Sorter {
-    static sortAndPrint(data: string) {
+    static sortAndPrint(data: string): void {
         return new CharactersCollection(data).sort().print();
     }
 

@@ -1,7 +1,7 @@
 import { Sorter } from './Sorter';
 
 export class DatesCollection extends Sorter {
-    static sortAndPrint(data: Date[]) {
+    static sortAndPrint(data: Date[]): void {
         return new DatesCollection(data).sort().print();
     }
 

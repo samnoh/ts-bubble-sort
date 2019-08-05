@@ -9,7 +9,7 @@ class Node {
 export class LinkedList extends Sorter {
     head: Node | null = null;
 
-    static sortAndPrint(data: number[]) {
+    static sortAndPrint(data: number[]): void {
         const linkedList = new LinkedList();
         data.map(num => linkedList.add(num));
         return linkedList.sort().print();
