@@ -1,6 +1,6 @@
 import { Sorter } from './Sorter';
 
-export class DatesCollection extends Sorter {
+export class DatesCollection extends Sorter<Date[]> {
     static sortAndPrint(data: Date[]): void {
         return new DatesCollection(data).sort().print();
     }
@@ -22,9 +22,5 @@ export class DatesCollection extends Sorter {
             this.data[rightIndex],
             this.data[leftIndex]
         ]; // swap
-    }
-
-    print(): void {
-        console.log(this.data);
     }
 }

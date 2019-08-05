@@ -1,6 +1,6 @@
 import { Sorter } from './Sorter';
 
-export class NumbersCollection extends Sorter {
+export class NumbersCollection extends Sorter<number[]> {
     static sortAndPrint(data: number[]): void {
         return new NumbersCollection(data).sort().print();
     }
@@ -22,9 +22,5 @@ export class NumbersCollection extends Sorter {
             this.data[rightIndex],
             this.data[leftIndex]
         ]; // swap in destructuring expression
-    }
-
-    print(): void {
-        console.log(this.data);
     }
 }

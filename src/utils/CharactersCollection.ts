@@ -1,6 +1,6 @@
 import { Sorter } from './Sorter';
 
-export class CharactersCollection extends Sorter {
+export class CharactersCollection extends Sorter<string> {
     static sortAndPrint(data: string): void {
         return new CharactersCollection(data).sort().print();
     }
@@ -21,9 +21,5 @@ export class CharactersCollection extends Sorter {
         const chars = this.data.split('');
         [chars[leftIndex], chars[rightIndex]] = [chars[rightIndex], chars[leftIndex]]; // swap
         this.data = chars.join('');
-    }
-
-    print(): void {
-        console.log(this.data);
     }
 }

@@ -1,4 +1,5 @@
-export abstract class Sorter {
+export abstract class Sorter<T = {}> {
+    data?: T;
     abstract length: number;
     abstract compare(leftIndex: number, rightIndex: number): boolean;
     abstract swap(leftIndex: number, rightIndex: number): void;
@@ -16,5 +17,9 @@ export abstract class Sorter {
         }
 
         return this;
+    }
+
+    print(): void {
+        console.log(this.data);
     }
 }
