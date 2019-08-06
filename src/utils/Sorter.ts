@@ -1,4 +1,4 @@
-export abstract class Sorter<T = {}> {
+export abstract class Sorter<T = any> {
     data?: T;
     abstract length: number;
     abstract compare(leftIndex: number, rightIndex: number): boolean;
